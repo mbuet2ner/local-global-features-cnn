@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Custom folders
+data/
+
+# Custom files
+utils/module.py
