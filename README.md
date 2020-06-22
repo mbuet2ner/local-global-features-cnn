@@ -1,8 +1,10 @@
 # Local Versus Global Features in Convolutional Neural Networks
 
-Interactive notebooks and python code for my Master's Thesis: "The Role of Local Versus Global Features in Convolutional Neural Networks" at the [University of Bamberg](https://www.uni-bamberg.de/en/).
+Interactive notebooks and python code for my Master's Thesis: "The Role of Local Versus Global Features in Convolutional Neural Networks: A Comparison of State of the Art Architectures" at the [University of Bamberg](https://www.uni-bamberg.de/en/).
 
 See [this blog post](https://www.maltebuettner.com/post/master/) for a brief summary of the thesis.
+
+![repo-banner](https://user-images.githubusercontent.com/20720363/85287810-15609780-b495-11ea-8413-ce440cee36b0.png)
 
 ## Abstract
 The current state of the art Convolutional Neural Networks (CNNs) were shown to oper-
@@ -26,8 +28,11 @@ regarding the prerequisites and that architectural refinements such as SE-ResNeX
 be a more promising alternative.
 
 ### Usage
-Due to the complex nature of the experiments, each step has its own notebbok. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mbuet2ner/local-global-features-cnn/)
+Due to the complex nature of the experiments, each step has its own notebbok. 
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mbuet2ner/local-global-features-cnn/)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mbuet2ner/local-global-features-cnn/master)
+
 1. In [1_imagenet_boundingboxes](1_imagenet_boundingboxes.ipynb) a one easy to work with file with ImageNet's bounding boxes is created.
 2. [2_imagenette_boundingboxes](2_imagenette_boundingboxes.ipynb) adapts these bounding boxes to Imagenette and calculates the correct sizes of the boxes when resized to `256` and then center cropped to `224`.
 3. [3_canny_edges.ipynb](3_canny_edges.ipynb) creates a file that contains Canny edge coordinates for Imagenette using a custom `auto-canny` function. A reduced file with coordinates that lie within the respective bounding box is also created. These Canny edges later serve as a proxy for shape.
